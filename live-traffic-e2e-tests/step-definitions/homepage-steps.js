@@ -12,6 +12,8 @@ var expect = chai.expect;
 let base = require('../pages/basepage.js')
 var learningpage = require('../pages/learningPage.js')
 
+var {setDefaultTimeout} = require('cucumber');
+setDefaultTimeout(60 * 1000);
 
 //---------------------------------------------------------------------------------
 
@@ -23,16 +25,16 @@ Given(/^I go to "([^"]*)"$/, function (website) {
 
 When(/^user validate the homepage title as "([^"]*)"$/, function (title) {
   
-  browser.sleep(2000);
+  //browser.sleep(2000);
   return base.verifyPageTitle(title);
   
 });
 
 When(/^user adds "([^"]*)" to the todo list$/, function (todoItem) {
 
-  browser.sleep(2000);
+  //browser.sleep(2000);
   base.enterTodoItem(todoItem);
-  browser.sleep(2000);
+  //browser.sleep(2000);
   return element(by.css('[value="add"]')).click();
 });
 

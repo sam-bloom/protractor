@@ -5,7 +5,7 @@ exports.config = {
     //seleniumAddress: 'http://localhost:4444/wd/hub',
     
     seleniumAddress: prop.get('seleniumAddress'),
-    //directConnect: true,
+    directConnect: true,
 
     getPageTimeout: prop.get('pageTimeout'),
     allScriptsTimeout: prop.get('scriptTimeout'),
@@ -23,7 +23,7 @@ exports.config = {
         chromeOptions: {
           args: [ "--headless" ]
         }
-*/
+
         
           browserName: 'firefox',
           firefoxOptions: {
@@ -33,9 +33,9 @@ exports.config = {
             args: ['-headless']
           }
         }
+    */  
       
-      
-      //{"browserName": 'chrome'}
+      "browserName": 'chrome'},
     ],
     
     plugins: [{
