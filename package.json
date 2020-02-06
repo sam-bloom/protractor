@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cuke-test": ".\\node_modules\\.bin\\cucumber-js --format=json:cucumber_report.json && node index.js",
-    "livetraffic-test": "protractor protractor.conf.js"
+    "livetraffic-test": "protractor protractor.conf.js",
+    "browserstack-test": "protractor browserstack.conf.js"
   },
   "author": "",
   "license": "ISC",
